@@ -1,0 +1,220 @@
+[1] "/lustre09/project/6088829/R_libs/4.4.0"                                                                 
+[2] "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/r/4.4.0/lib64/R/library"
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘sp’
+
+The following object is masked from ‘package:IRanges’:
+
+    %over%
+
+
+Attaching package: ‘SeuratObject’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    intersect
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following object is masked from ‘package:IRanges’:
+
+    intersect
+
+The following object is masked from ‘package:S4Vectors’:
+
+    intersect
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    intersect
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+Using 16 cores...
+DataFrame with 6 rows and 1 column
+                                 label.main
+                                   <factor>
+ext_cell_243799 Erythroid                  
+ext_cell_34141  Erythroid                  
+cell_106151     ExE ectoderm               
+ext_cell_183738 Branchial arch neural crest
+ext_cell_213944 Mesenchyme                 
+ext_cell_91155  Sclerotome                 
+[1] "Erythroid"                   "Erythroid"                  
+[3] "ExE ectoderm"                "Branchial arch neural crest"
+[5] "Mesenchyme"                  "Sclerotome"                 
+[1] TRUE
+             used    (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    9008109   481.1   14202755   758.6   14202755   758.6
+Vcells 2391754764 18247.7 5216874246 39801.6 4776839597 36444.4
+DataFrame with 6 rows and 4 columns
+                                                                        scores
+                                                                      <matrix>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1 0.0997320:0.0739378:0.105777:...
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1 0.1931334:0.1872168:0.277573:...
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1 0.0937617:0.0936080:0.167570:...
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1 0.2439146:0.1398713:0.198097:...
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1 0.1883646:0.1874279:0.232284:...
+WT_REP1_WT_REP1_1A_TATAACGAGGAAACTCAGTAGGCT-1 0.1056801:0.0756586:0.115621:...
+                                                              labels delta.next
+                                                         <character>  <numeric>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1 Dorsal midbrain neur.. 0.06825937
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1               Epiblast 0.12712755
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1                   Node 0.06151068
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1       Cranial mesoderm 0.05236949
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1               Epiblast 0.06274709
+WT_REP1_WT_REP1_1A_TATAACGAGGAAACTCAGTAGGCT-1 Dorsal midbrain neur.. 0.00570405
+                                                       pruned.labels
+                                                         <character>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1 Dorsal midbrain neur..
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1               Epiblast
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1                   Node
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1       Cranial mesoderm
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1               Epiblast
+WT_REP1_WT_REP1_1A_TATAACGAGGAAACTCAGTAGGCT-1 Dorsal midbrain neur..
+DataFrame with 12144 rows and 4 columns
+                                                                                    scores
+                                                                                  <matrix>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1             0.0997320:0.0739378:0.105777:...
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1             0.1931334:0.1872168:0.277573:...
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1             0.0937617:0.0936080:0.167570:...
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1             0.2439146:0.1398713:0.198097:...
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1             0.1883646:0.1874279:0.232284:...
+...                                                                                    ...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GACGAGGAGGTTACTTAACGGGAA-1   0.227208:0.184911:0.271414:...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_AAACCGGTCAGGTAACAACGGGAA-1   0.221197:0.179540:0.258884:...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TTTCATCGTCGGTTATAACGGGAA-1   0.206202:0.183202:0.239506:...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GTTGTCCAGCGCCTTGAACGGGAA-1   0.228407:0.184973:0.257374:...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TAGGCTGAGATATTGGAACGGGAA-1   0.220889:0.179456:0.262081:...
+                                                                          labels
+                                                                     <character>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1             Dorsal midbrain neur..
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1                           Epiblast
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1                               Node
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1                   Cranial mesoderm
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1                           Epiblast
+...                                                                          ...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GACGAGGAGGTTACTTAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_AAACCGGTCAGGTAACAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TTTCATCGTCGGTTATAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GTTGTCCAGCGCCTTGAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TAGGCTGAGATATTGGAACGGGAA-1 Ventral hindbrain pr..
+                                                          delta.next
+                                                           <numeric>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1              0.0682594
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1              0.1271276
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1              0.0615107
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1              0.0523695
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1              0.0627471
+...                                                              ...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GACGAGGAGGTTACTTAACGGGAA-1 0.05290581
+p66ShcKO_REP4_p66ShcKO_REP4_2B_AAACCGGTCAGGTAACAACGGGAA-1 0.04567863
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TTTCATCGTCGGTTATAACGGGAA-1 0.03576573
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GTTGTCCAGCGCCTTGAACGGGAA-1 0.00319389
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TAGGCTGAGATATTGGAACGGGAA-1 0.00433921
+                                                                   pruned.labels
+                                                                     <character>
+WT_REP1_WT_REP1_1A_CTATTGAGTTTGTCCCAGTAGGCT-1             Dorsal midbrain neur..
+WT_REP1_WT_REP1_1A_GTTCGCGTCCCAGACTAGTAGGCT-1                           Epiblast
+WT_REP1_WT_REP1_1A_TCCTAAGTCAAGGGTTAGTAGGCT-1                               Node
+WT_REP1_WT_REP1_1A_ATCGTGCTCATGTCATAGTAGGCT-1                   Cranial mesoderm
+WT_REP1_WT_REP1_1A_ACTAATGAGGGTTATAAGTAGGCT-1                           Epiblast
+...                                                                          ...
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GACGAGGAGGTTACTTAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_AAACCGGTCAGGTAACAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TTTCATCGTCGGTTATAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_GTTGTCCAGCGCCTTGAACGGGAA-1 Ventral hindbrain pr..
+p66ShcKO_REP4_p66ShcKO_REP4_2B_TAGGCTGAGATATTGGAACGGGAA-1 Ventral hindbrain pr..
+SingleR job done
