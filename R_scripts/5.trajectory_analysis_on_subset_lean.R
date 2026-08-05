@@ -90,8 +90,8 @@ cds_pr_test_res <- readRDS("../data/cds_pr_test_res_v2.rds")
 pr_deg_ids <- row.names(subset(cds_pr_test_res, q_value < 0.05)) #Filter test results to get vector of gene names that show statistically significant expression changes
 print(length(pr_deg_ids)) #15240 #15316 after re-estimating size factor
 
-#Cluster 2 = Mesenchymal stromal cell (11626 cells)
-#Cluster 24 = Skeletal myocyte progenitor cell (2255 cells) --> Pick as root
+#Cluster 2 = Mesenchymal stromal cell (11626 cells)  --> Pick as root
+#Cluster 24 = Skeletal myocyte progenitor cell (2255 cells)
 #Cluster 28 = Immature Skeletal myocyte (1122 cells)
 #Pathway is Skeletal myocyte progenitor cell -> Immature skeletal mycyte -> mature skeletal myocyte
 #Root (t = 0) -> early stage progenitor cell
