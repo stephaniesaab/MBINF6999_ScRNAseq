@@ -19,29 +19,29 @@ library(SeuratWrappers)
 register(SnowParam(workers = 4)) #To let it use multiple cores
 
 # Load subsetted Seurat object (clusters 2, 24, 28)
-# srt_rds <- readRDS("../data/traj_srt_subset_lean.rds")
+srt_rds <- readRDS("../data/traj_srt_subset_lean.rds")
 # 
 # #Convert Seurt object to cell_data_set (cds)
-# cds <- as.cell_data_set(srt_rds, assay = "RNA")
-# cds <- estimate_size_factors(cds)
+cds <- as.cell_data_set(srt_rds, assay = "RNA")
+cds <- estimate_size_factors(cds)
 # 
 # #Pre-processing ------------------------------------------
 # #Redo UMAP and clustering with just the selected clusters
 # 
 # #PCA on gene expression matrix
-# cds <- preprocess_cds(cds, num_dim = 50) #Default dim for PCA
+cds <- preprocess_cds(cds, num_dim = 50) #Default dim for PCA
 # 
 # #Run UMAP on PCs
-# cds <- reduce_dimension(cds)
+cds <- reduce_dimension(cds)
 # 
 # #Cluster nearby cells on UMAP -> clusters and partitions calculations
 # cds <- cluster_cells(cds)
 # 
 # #Plot by Seurat clusters -> QC visualization of UMAP
-# plot_cells(cds, color_cells_by = "seurat_clusters", show_trajectory_graph = FALSE)
+plot_cells(cds, color_cells_by = "seurat_clusters", show_trajectory_graph = FALSE)
 # 
 # #Plot partitions -> colour cells based on monocle's partitions
-# plot_cells(cds, color_cells_by = "partition", show_trajectory_graph = FALSE)
+plot_cells(cds, color_cells_by = "partition", show_trajectory_graph = FALSE)
 # 
 # #Learn Trajectory graph
 # #SimplePPT algorithm to fit a reversed graph embedding -> tree skeleton branching
@@ -49,23 +49,23 @@ register(SnowParam(workers = 4)) #To let it use multiple cores
 # #all cells -> Preventing a cluster from being completely disconnected
 # 
 # #Learn the trajectory graph
-# cds <- learn_graph(cds, use_partition = FALSE)
+cds <- learn_graph(cds, use_partition = FALSE)
 # 
-# plot_cells(cds) #Plot UMAP with generated black trajectory tree skeleton overlaid
+plot_cells(cds) #Plot UMAP with generated black trajectory tree skeleton overlaid
 # 
 # #Order cells in pseudotime
 # #Interactive test -> Can manually click on a node to set the root
-# cds <- order_cells(cds)
-# head(pseudotime(cds)) #Check that they're not NA
+cds <- order_cells(cds)
+head(pseudotime(cds)) #Check that they're not NA
 # 
 # #Plot pseudotime trajectories
-# plot_cells(cds,
-#            color_cells_by = "pseudotime",
-#            show_trajectory_graph = TRUE,
-#            label_groups_by_cluster = FALSE,
-#            label_leaves = FALSE,
-#            label_branch_points = FALSE)
-# 
+plot_cells(cds,
+            color_cells_by = "pseudotime",
+             show_trajectory_graph = TRUE,
+             label_groups_by_cluster = FALSE,
+             label_leaves = FALSE,
+             label_branch_points = FALSE)
+ 
 # # save_monocle_objects(cds, "../data/cds_traj_v3", comment = "This is the 3rd version CDS with hand-chosen roots. stored 2026-07-23", verbose = TRUE)
 
 
