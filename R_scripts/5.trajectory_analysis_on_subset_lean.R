@@ -35,7 +35,7 @@ cds <- preprocess_cds(cds, num_dim = 50) #Default dim for PCA
 cds <- reduce_dimension(cds)
 # 
 # #Cluster nearby cells on UMAP -> clusters and partitions calculations
-# cds <- cluster_cells(cds)
+cds <- cluster_cells(cds)
 # 
 # #Plot by Seurat clusters -> QC visualization of UMAP
 plot_cells(cds, color_cells_by = "seurat_clusters", show_trajectory_graph = FALSE)
